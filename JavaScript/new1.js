@@ -5,7 +5,7 @@ document.write(y);
 
 
 function changeimg(id){
-document.getElementById("butong").src="file:///H:/Users/TuWen/Download/IDM/Photos/26/64373501_p0_master1200.jpg"
+document.getElementById("butong").src="https://78.media.tumblr.com/a6d791ffa511e4bf0deb71c0a019e05e/tumblr_ox48sk2BNU1qb2kz6o1_1280.jpg"
 };
 document.getElementById("butong").onclick=function(){
     changeimg();
