@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>蛤？</title>
+<base href="https://www.bilibili.com" target="_blank">
+<script src="E:\users\maker\Documents\JavaScrip\jquery-3.2.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".jq1").click(function(){
+        $(".jq2").toggle(2000);
+    });
+});
+</script>
+<link rel="stylesheet" type="text/css" href="E:\users\maker\documents\CSS\new1.css" />
+</head>
+<body>
+
+
+<ul class="she">
+        <li><a href="av10504357/" >Zelda</a></li>
+        <li><a href="H:\Users\TuWen\Download\CloudMusic\a_hisa - ほたる火.mp3" class="two" >Play Sound</a></li>
+        <li><a href="https://i1.hdslb.com/bfs/face/308cf6456236ae6de4b170ca04ee8cd8fc5f30ae.jpg" >Yuri</a></li>
+</ul>  
+
+<audio controls="controls"><source src="H:\Users\TuWen\Download\CloudMusic\a_hisa - ほたる火.mp3" type="audio/mp3" />
+Your browser does not support this audio format.
+</audio>
+
+ 
+<video width="1066.667px" height="600px" controls="controls"><source src="H:\Users\TuWen\Download\IDM\Video\柚子森桑\01\柚子森桑 第一话.mp4" type="video/mp4"/>
+</video>
+ 
+
+<img id="butong" src="H:\Users\TuWen\Download\IDM\Photos\26\64203044_p0.jpg" />
+
+
+
+<div id="p1"><p id="p2" >点击图片跟换图片</p></div>
+
+
+<ul class="shi">
+  <li><a href="av10504357/" id="no1" >shishi</a></li>
+  <li><a href="H:\Users\TuWen\Download\CloudMusic\a_hisa - ほたる火.mp3" class="two" >Play Sound</a></li>
+  <li><a href="https://i1.hdslb.com/bfs/face/308cf6456236ae6de4b170ca04ee8cd8fc5f30ae.jpg" >SS</a></li>
+</ul>
+
+  
+<table id="customers">
+  <tr>
+  <td>2 3 45 </td>
+  </tr>
+  <tr class="alt">
+  <td>45 3 2 </td>
+  </tr>
+  <tr>
+  <td>45 3 2 </td>
+  </tr>
+</table>
+
+    
+<p id="Tijn">34</p>
+
+<button type="button" class="jq1">shishi</button>
+<p class="jq2">34 355</p>
+<p id="intro">hello world!</p>
+
+<script src="E:\users\maker\Documents\JavaScript\new1.js"></script>
+</body>
+</html>
+
