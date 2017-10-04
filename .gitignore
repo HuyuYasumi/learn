@@ -1,3 +1,6 @@
+*.un~
+*.swp
+
 # wenjanjia :
 documents
 Git
@@ -5,7 +8,6 @@ SAI
 visual studio 2015
 
 #JS
-*.un~
 *.js~
 *.js~~
 
