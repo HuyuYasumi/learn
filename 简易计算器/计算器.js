@@ -1,6 +1,6 @@
 var result_1;
 
-//加法
+//运算
 function add(){
     var a=getFirst();
     var b=getTwice();
