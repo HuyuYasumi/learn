@@ -2,31 +2,37 @@ var result_1;
 
 //加法
 function add(){
-    var a=getFrist();
+    var a=getFirst();
     var b=getTwice();
-    var re=a+b;
+    var re=Number(a)+Number(b);
     senResult(re);
 }
 
 function subtract(){
-    var a=getFrist();
+    var a=getFirst();
     var b=getTwice();
     var re=a-b;
     senResult(re);
 }
 
 function ride(){
-    var a=getFrist();
+    var a=getFirst();
     var b=getTwice();
     var re=a*b;
     senResult(re);
 }
 
 function devide(){
-    var a=getFrist();
+    var a=getFirst();
     var b=getTwice();
     var re=a/b;
     senResult(re);
+}
+
+//输出p值
+function senResult(result_1){
+    var num=document.getElementById("result");
+    num.innerHTML=result_1;
 }
 
 //获取输入值
@@ -36,14 +42,10 @@ function getFirst(){
 }
 
 function getTwice(){
-    var twice=document.getElementById("twice").vavlue;
+    var twice=document.getElementById("twice").value;
     return twice;
 }
 
-//输出p值
-functuon senResult(result_1){
-    var num=document.getElementById("result");
-    num.innerHTML=result_1;
-}
+
 
 
