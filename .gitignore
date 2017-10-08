@@ -1,5 +1,25 @@
+*.un~
+*.swp
+
 # wenjanjia :
 documents
 Git
 SAI
 visual studio 2015
+
+#JS
+JavaScript/.new1.js.un~
+JavaScript/new1.js~
+*.js~
+*.js~~
+
+#Html
+Html/.new2.html.un~
+Html/new2.html~
+
+*.html~
+*.html~~
+
+#CSS
+*.css~
+*.css~~
