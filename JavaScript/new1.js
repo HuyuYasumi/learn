@@ -4,11 +4,11 @@ y=document.getElementById("Tijn").innerHTML="Tijn";
 document.write(y);*/
 
 
-function changeimg(id){
+/*function changeimg(id){
 document.getElementById("butong").src="file:///D:/GoogleDrive/GAME/PSP/SAVE/%E6%80%AA%E7%89%A9%E7%8C%8E%E4%BA%BAP3/ULJM05800/PIC1.PNG"
-};
+};*/
 document.getElementById("p1").onclick=function(){
-    changeimg();
+    document.getElementById("butong").src="file:///D:/GoogleDrive/GAME/PSP/SAVE/%E6%80%AA%E7%89%A9%E7%8C%8E%E4%BA%BAP3/ULJM05800/PIC1.PNG";
     var para=document.createElement("p");
     var node=document.createTextNode("很遗憾只能更改一次，如需再次体验请按<F5>");
     para.appendChild(node);
