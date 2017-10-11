@@ -1,9 +1,10 @@
+//声明全局函数
 var result_1;
 var result_2;
 var re;
 
 
-//加法
+//运算
 function add(){
     var a=getFirst();
     var b=getTwice();
@@ -86,7 +87,13 @@ function getSecond(){
 }
 
 
+//点击事件
 function changeColorFir() {
-    document.getElementById("first").stytle="background-color:#FFFFFFF";
+    document.getElementById("first").setAttribute("style","background-color:#FFF");
 }
-
+function changeColorTwi() {
+    document.getElementById("twice").setAttribute("style","background-color:#FFF");
+}
+function changeColorSec() {
+    document.getElementById("second").setAttribute("style","background-color:#FFF");
+}
