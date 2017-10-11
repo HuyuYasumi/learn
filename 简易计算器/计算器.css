@@ -1,0 +1,31 @@
+table {
+        box-shadow:-3px 5px 9px #aaaaaa;
+        font-weight:bold;
+        color:#FFFFFF;
+        background-color:#98bf21;
+        padding:4px;
+}
+
+input {
+        border-width:0px;
+        background-color:#98bf21;
+        /*box-shadow:-2px 5px 5px #789916;*/
+}
+
+input:hover {
+        box-shadow:0px 0px 5px #789916;
+}
+
+input:active {
+        background-color:#FFF;
+        box-shadow:0px 0px 5px #789916;
+}
+
+button {
+        border-width:0px;
+        background-color:#98bf21;
+}
+
+button:hover {
+        box-shadow:0px 0px 5px #789916;
+}

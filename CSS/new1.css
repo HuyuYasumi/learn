@@ -1,76 +1,79 @@
 #no2 {
-	background-color: gray; padding: 10px;
+    	background-color: gray;
+        padding: 10px;
 }
 
-audio,ul[class="she"]>li 
-{
-    float: left;
+audio,ul [ class="she" ] > li {
+        float: left;
 }
 
 
-a:link {display:block;
-font-weight:bold;
-font-size:14px;
-font-family:Verdana, Arial, Helvetica, sans-serif;
-color:#FFFFFF;
-background-color:#98bf21;
-width:120px;
-text-align:center;
-padding:4px;
-text-decoration:none;}		/* 未被访问的链接 */
-a:visited {text-decoration:none;}	/* 已被访问的链接 */
-a:hover {background-color:#7A991A;
-text-decoration:underline;}	/* 鼠标指针移动到链接上 */
-a:active {background-color:#7A991A;
-text-decoration:underline;}	/* 正在被点击的链接 */
+a:link,button {
+        display:block;
+        font-weight:bold;
+        font-size:14px;
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        color:#FFFFFF;
+        background-color:#98bf21;
+        width:120px;
+        text-align:center;
+        padding:4px;
+        text-decoration:none;
+}		/* 未被访问的链接 */
+a:visited,button {text-decoration:none;}	/* 已被访问的链接 */
+a:hover,button {
+        background-color:#7A991A;
+        text-decoration:underline;
+}	/* 鼠标指针移动到链接上 */
+a:active,button {
+        background-color:#7A991A;
+        text-decoration:underline;
+}	/* 正在被点击的链接 */
 
 audio {
-display:block;}
-
-ul.shi 
-{
-list-style-image: url('http://www.w3school.com.cn/i/eg_arrow.gif');
-margin:0;
-padding:0px 20px;
-width:150px
+        display:block;
 }
 
-ul.she
-{
-list-style-type:none;
-margin:0;
-padding:0;
+ul.shi {
+        list-style-image: url('http://www.w3school.com.cn/i/eg_arrow.gif');
+        margin:0;
+        padding:0px 20px;
+        width:150px
 }
 
-ul.she>li, video, img,audio,button,div>p {
-box-shadow:0px 2px 3px #aaaaaa;margin-top:2px;margin-bottom:2px;
+ul.she {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+}
+
+ul.she > li, video, img,audio,button,div>p {
+        box-shadow:0px 2px 3px #aaaaaa;margin-top:2px;margin-bottom:2px;
 }
 
 div>p {
-display:block;
-font-weight:bold;
-font-size:14px;
-font-family:Verdana, Arial, Helvetica, sans-serif;
-color:#FFFFFF;
-background-color:#98bf21;
-width:350px;
-height:17px;
-text-align:center;
-text-decoration:none;
+        display:block;
+        font-weight:bold;
+        font-size:14px;
+        font-family:Verdana, Arial, Helvetica, sans-serif;
+        color:#FFFFFF;
+        background-color:#98bf21;
+        width:350px;
+        height:17px;
+        text-align:center;
+        text-decoration:none;
 }
 
-table
-  {
-  border-collapse:collapse;
-  margin-top:2px;margin-bottom:2px;
-  }
+table {
+        border-collapse:collapse;
+        margin-top:2px;margin-bottom:2px;
+}
 
-#customers
-  {
-  font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
-  width:80px;
-  border-collapse:collapse;
-  }
+#customers {
+        font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+        width:80px;
+        border-collapse:collapse;
+}
 
 
 /*#customers td, #customerss th 
