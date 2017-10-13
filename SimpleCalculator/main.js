@@ -97,3 +97,16 @@ function changeColorTwi() {
 function changeColorSec() {
     document.getElementById("second").setAttribute("style","background-color:#FFF");
 }
+
+
+/*function changeColorFir2() {
+    document.getElementById("first").setAttribute("style","background-color:#98bf21");
+}
+
+function changeColorTwi2() {
+    document.getElementById("twice").setAttribute("style","background-color:#98bf21");
+}
+
+function changeColorSec2() {
+    document.getElementById("second").setAttribute("style","background-color:#98bf21");
+}*/

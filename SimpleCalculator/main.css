@@ -40,3 +40,9 @@ button {
 button:hover {
         box-shadow:0px 0px 5px #789916;
 }
+
+p {
+        margin:0px;
+        height:20.8px;
+        width:240px;
+}
