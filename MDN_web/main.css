@@ -1,0 +1,153 @@
+ul {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+
+}
+
+a {
+    text-decoration:none;
+}
+
+body {
+    line-height:1.5;
+    margin:0;
+}
+
+/*li {
+    padding:0;
+}*/
+
+.logo {
+    position:relative;
+    top:20px;
+    float:left;
+    margin-right:20px;
+    /*z-index:2;
+    width:170px;
+    height:48px;
+    background-size:219px auto;
+    display:block;
+    direction:ltr;
+    text-indent:9999px;
+    overflow:hidden;*/
+}
+
+.nav-main-item {
+    display:inline-block;
+    position:relative;
+}
+
+.nav-main-item>a {
+    text-decoration:none;
+}
+
+.nav-main-item>a {
+    display:inline-block;
+    line-height:88px;
+    padding:0 10px;
+}
+
+.nav-main-search {
+    display:list-item;
+    float:right;
+    text-align:right;
+    position:relative;
+}
+
+.search-wrap {
+    right:0;
+    width:0;
+    overflow:hidden;
+    padding-left:45px;
+    line-height:88px;
+    transition-property:width,opacity;
+    transition-duration:.5s;
+}
+
+.search-trigger {
+    left:15px;
+    cursor:pointer;
+}
+
+.center {
+    /*padding-left:24px;
+    padding-right:24px;*/
+    margin:0 auto;
+    max-width:87.4375em;
+}
+
+.login>a {
+    text-decoration:none;
+    display:inline-block;
+    line-height:88px;
+    color:#fff;
+    padding:0 20px;
+}
+
+.offscreen {
+    border:0;
+    clip:rect(o o o o);
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    width:1px;
+}
+
+.submenu-column {
+    box-sizing:border-box;
+    display:inline-block;
+    vertical-align:text-top;
+    padding-right:20px;
+    width:250px;
+}
+
+.submenu, .submenu-column, .submenu.submenu-cols-2 {
+    width:max-content;
+}
+
+.submenu {
+    position:absolute;
+    /*top:100%;
+    left:0;*/
+    padding:15px;
+    border-top:5px solid #eee;
+    box-shadow:0 4px 4px rgba(0,0,0,.15);
+    background-color:#fff;
+    display:none;
+}
+
+.nav-main-item>a:hover {
+    background:#eee;
+}
+#main-header {
+    position:relative;
+    /*padding-top:0;
+    padding-bottom:0;
+    z-index:1;*/
+    clear:both;
+    border:5px solid #83d0f2;
+    border-width:5px 0 0;
+    background-color:#fff;
+    box-shadow:0 0 9px 0 rgba(0,0,0,.3);
+}
+
+#main-header>.center {
+    clear:both;
+}
+
+#nav-sec {
+    float:right;
+    position:relative;
+    /*right:-23px;
+    z-index:3;*/
+    background-color:#000;
+}
+
+#main-q {
+    width:100%;
+    margin:6px auto;
+}
+

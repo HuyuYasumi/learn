@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="file:///F:/learn/MDN_web/main.css"/>
+<title>MDN Web Clone</title>
+
+<script>
+    function learnSubmenuover() {
+        var a=document.getElementById("nav-learn-submenu");
+    a.setAttribute("style","display:block");
+    }
+    function learnSubmenuout() {
+        document.getElementById("nav-learn-submenu").setAttribute("style","display:none");
+    }
+    function techSubmenuover() {
+        var a=document.getElementById("nav-tech-submenu");
+    a.setAttribute("style","display:block");
+    }
+    function techSubmenuout() {
+        document.getElementById("nav-tech-submenu").setAttribute("style","display:none");
+    }
+    function contackSubmenuover() {
+        var a=document.getElementById("nav-contack-submenu");
+    a.setAttribute("style","display:block");
+    }
+    function contackSubmenuout() {
+        document.getElementById("nav-contack-submenu").setAttribute("style","display:none");
+    }
+</script>
+
+</head>
+<body>
+    <header id="main-header">
+        <div class="center">
+            <a href="" class="logo">MDN Web 文档</a>
+            <div id="nav-sec">
+                <ul>
+                    <li>
+                        <div class="login">
+                            <a href="">
+                                登陆
+                                <i aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <nav>
+                <ul>
+                    <li class="nav-main-item" onmouseover="techSubmenuover()" onmouseout="techSubmenuout()">
+                        <a href="">
+                            技术
+                            <i aria-hidden="true"></i>
+                        </a>
+                        <div class="submenu js-submenu" id="nav-tech-submenu" aria-hidden="true" style="display:none">
+                            <div class="submenu-column">
+                                <ul>
+                                    <li href="">li</li>
+                                    <li href="">li</li>
+                                    <li href="">li</li>
+                                </ul>
+                            </div>
+                            <!--<button type="button" class="submenu-close transparent">
+                                <span class-"offscreen">关闭子菜单</span>
+                                <i aria-hidden="true" class="icon-times"></i>
+                            </button>-->
+                        </div>
+                    </li>
+                    <li class="nav-main-item" onmouseover="learnSubmenuover()" onmouseout="learnSubmenuout()">
+                        <a href="">
+                            参考和指引
+                            <i aria-hidden="true"></i>
+                        </a>
+                        <div class="submenu js-submenu" id="nav-learn-submenu" aria-hidden="true" style="display:none">
+                            <div class="submenu-column">
+                                <ul>
+                                    <li href="">li</li>
+                                    <li href="">li</li>
+                                    <li href="">li</li>
+                                </ul>
+                            </div>
+                            <!--<button type="button" class="submenu-close transparent">
+                                <span class-"offscreen">关闭子菜单</span>
+                                <i aria-hidden="true" class="icon-times"></i>
+                            </button>-->
+                        </div>
+                    </li>
+                    <li class="nav-main-item" onmouseover="contackSubmenuover()" onmouseout="contackSubmenuout()">
+                        <a href="">
+                            反馈
+                            <i aria-hidden="true"></i>
+                        </a>
+                        <div class="submenu js-submenu" id="nav-contack-submenu" aria-hidden="true" style="display:none">
+                            <div class="submenu-column">
+                                <ul>
+                                    <li href="">li</li>
+                                    <li href="">li</li>
+                                    <li href="">li</li>
+                                </ul>
+                            </div>
+                            <!--<button type="button" class="submenu-close transparent">
+                                <span class-"offscreen">关闭子菜单</span>
+                                <i aria-hidden="true" class="icon-times"></i>
+                            </button>-->
+                        </div>
+                    </li>
+                    <li class="nav-main-search">
+                        <form>
+                            <div class="search-wrap">
+                                <label for="main-q" class="offscreen">搜索</label>
+                                <input type="search" placeholder="搜索" id="main-q" name="q" data-value value/>
+                                <span class="search-trigger">
+                                    <i aria-hidden="true" class="icon-search">
+                                    </i>
+                                </span>
+                                <button type="submit" class="offscreen">搜索</button>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+    </header>
+</body>
+
