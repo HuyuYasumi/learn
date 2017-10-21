@@ -27,9 +27,21 @@
     function contackSubmenuout() {
         document.getElementById("nav-contack-submenu").setAttribute("style","display:none");
     }
+
+    /*var span1=document.getElementsByClassName("search-wrap");
+    function mainq() {
+        var mainq=document.getElementById("searchcao");
+        mainq.setAttribute("style","width:300px;");
+    }
+    span1.onclick = function mainq() {
+        var mainq2=document.getElementById("searchcao");
+        mainq2.setAttribute("style","width:300px;");
+    };*/
 </script>
 
 </head>
+
+
 <body>
     <header id="main-header">
         <div class="center">
@@ -40,7 +52,7 @@
                         <div class="login">
                             <a href="">
                                 登陆
-                                <i aria-hidden="true"></i>
+                                <!--i aria-hidden="true"></i-->
                             </a>
                         </div>
                     </li>
@@ -51,14 +63,14 @@
                     <li class="nav-main-item" onmouseover="techSubmenuover()" onmouseout="techSubmenuout()">
                         <a href="">
                             技术
-                            <i aria-hidden="true"></i>
+                            <!--i aria-hidden="true"></i-->
                         </a>
                         <div class="submenu js-submenu" id="nav-tech-submenu" aria-hidden="true" style="display:none">
                             <div class="submenu-column">
                                 <ul>
-                                    <li href="">li</li>
-                                    <li href="">li</li>
-                                    <li href="">li</li>
+                                    <li><a href="">Html</a></li>
+                                    <li><a href="">CSS</a></li>
+                                    <li><a href="">JavaScrpit</a></li>
                                 </ul>
                             </div>
                             <!--<button type="button" class="submenu-close transparent">
@@ -70,14 +82,14 @@
                     <li class="nav-main-item" onmouseover="learnSubmenuover()" onmouseout="learnSubmenuout()">
                         <a href="">
                             参考和指引
-                            <i aria-hidden="true"></i>
+                            <!--i aria-hidden="true"></i-->
                         </a>
                         <div class="submenu js-submenu" id="nav-learn-submenu" aria-hidden="true" style="display:none">
                             <div class="submenu-column">
                                 <ul>
-                                    <li href="">li</li>
-                                    <li href="">li</li>
-                                    <li href="">li</li>
+                                    <li><a href="">学习Web开发</a></li>
+                                    <li><a href="">参考文献</a></li>
+                                    <li><a href="">教程</a></li>
                                 </ul>
                             </div>
                             <!--<button type="button" class="submenu-close transparent">
@@ -89,14 +101,14 @@
                     <li class="nav-main-item" onmouseover="contackSubmenuover()" onmouseout="contackSubmenuout()">
                         <a href="">
                             反馈
-                            <i aria-hidden="true"></i>
+                            <!--i aria-hidden="true"></i-->
                         </a>
                         <div class="submenu js-submenu" id="nav-contack-submenu" aria-hidden="true" style="display:none">
                             <div class="submenu-column">
                                 <ul>
-                                    <li href="">li</li>
-                                    <li href="">li</li>
-                                    <li href="">li</li>
+                                    <li><a href="">获取Firefox帮助</a></li>
+                                    <li><a href="">获取Web帮助</a></li>
+                                    <li><a href="">加入MDN社区</a></li>
                                 </ul>
                             </div>
                             <!--<button type="button" class="submenu-close transparent">
