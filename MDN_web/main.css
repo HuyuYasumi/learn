@@ -1,8 +1,10 @@
-ul {
+ul,li {
     list-style-type:none;
+}
+
+ul {
     padding:0;
     margin:0;
-
 }
 
 a {
@@ -159,7 +161,7 @@ label {
 }
 
 .icon-search::before {
-    content:""
+    content:"\b00011";
 }
 
 .search-trigger i[class^=icon-] {
@@ -196,3 +198,100 @@ label {
     /* padding-left:2.5em; */
 }
 
+
+/* ҳͷ */
+#wiki-head {
+    padding:30px 0;
+    background-color:#f5f9fa;
+}
+
+#crumbs {
+    padding:5px 0;
+    float:left;
+}
+
+#crumbs ol {
+    border:0;
+    padding:0;
+    margin:0;
+}
+
+#crumbs li {
+    margin-right:10px;
+}
+
+#crumbs a {
+    border:2px;
+    line-height:1;
+    padding:5px 0;
+    display:block;
+}
+
+#web_document {
+    display:none;
+}
+
+#document-actions {
+    float:right;
+    margin-bottom:20px;
+}
+
+.page-buttons {
+    float:right;
+    padding:5px 0;
+    width:auto;
+}
+
+li.transparentLi,li.only-iconLi {
+    bottom:2px;
+}
+
+.page-buttons li{
+    margin-left:10px;
+    position:relative;
+    display:inline-block;
+    text-align:left;
+}
+
+button,.button {
+    display:inline-block;
+    /* line-height:1; */
+    letter-spacing:normal;
+    border:2px solid #9b9b9b;
+    background-color:#fff;
+    padding:5px 11px;
+    color:#4c4c4c;
+    text-decoration:none;
+}
+
+button.transparent {
+    background-color:transparent;
+    border:0;
+    padding-left:0;
+    padding-right:0;
+}
+
+.button.neutral {
+    border-color:#3f87a6;
+    color:#29627e;
+}
+
+.only-icon span {
+    border:0;
+    clip:rect(0 0 0 0);
+    height:1px;
+    margin:-1px;
+    overflow:hidden;
+    padding:0;
+    position:absolute;
+    width:1px;
+}
+
+.document-title {
+    clear:both;
+    position:relative;
+}
+
+h1 {
+    font-family:x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
+}
