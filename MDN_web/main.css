@@ -2,7 +2,7 @@ ul,li {
     list-style-type:none;
 }
 
-ul {
+ul,p {
     padding:0;
     margin:0;
 }
@@ -141,7 +141,7 @@ label {
     display:block;
 }
 
-.submenu-column a:hover,#crumbs a:hover {
+.submenu-column a:hover,#crumbs a:hover,.section a:hover {
     text-decoration:underline;
 }
 
@@ -304,4 +304,111 @@ button.transparent {
 
 h1 {
     font-family:x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
+}
+
+
+
+/* wiki-main */
+main>.center {
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+.center,article {
+    position:relative;
+}
+
+.clear {
+    clear:both;
+}
+
+.wiki-main-content {
+    background:#fff;
+    min-height:300px;
+}
+
+.wiki-main-content>.center {
+    padding-right:0;
+    padding-left:0;
+}
+
+#wiki-column-container {
+    overflow:auto;
+    clear:both;
+}
+
+#wiki-content, #wiki-left, #wiki-right {
+    min-height:1px;
+}
+
+#wiki-column-container #wiki-content {
+    margin:0;
+    float:none;
+    width:auto;
+}
+
+p {
+    margin-bottom:24px;
+}
+
+body .topicpage-table {
+    display:table;
+    border-collapse:separate;
+    border-spacing:20px 0;
+    clear:both;
+    width:auto;
+    border:none;
+}
+
+body .topicpage-table .section:first-of-type,
+body .topicpage-table .td:first-of-type,
+body .topicpage-table .th:first-of-type {
+    padding-right:20px;
+    margin-right:20px;
+    border-right:solid 6px #eaeff2;
+}
+
+body .topicpage-table .section,
+body .topicpage-table .td,
+body .topicpage-table .th {
+    display:table-cell;
+    width:50%;
+}
+
+.highlight-spanned.highlight, .text-content h2.highlight-spanned {
+    padding:inherit;
+    background-color:inherit;
+    color:inherit;
+}
+
+.highlight, .highlight .highlight-span, .text-content h2,h2 .highlight-span {
+    padding:0 4px;
+    background-color:#333;
+    color:#fff;
+    font-weight:400;
+    line-height:1.25;
+    -webkit-box-decoration-break:clone;
+}
+
+h3,h4 {
+    margin:20px 0 10px;
+}
+
+dl {
+    margin-bottom:20px;
+    margin-top:0;
+}
+
+dd {
+    margin-bottom:24px;
+    margin-left:20px;
+}
+
+.topicpage-table ul {
+    padding-left:24px;
+    list-style-type:disc;
+}
+
+.topicpage-table ul li {
+    margin-bottom:6px;
 }
