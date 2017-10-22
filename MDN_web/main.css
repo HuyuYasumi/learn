@@ -153,7 +153,7 @@ label {
     border-top:5px solid #eee;
     box-shadow:0 4px 4px rgba(0,0,0,.15);
     background-color:#fff;
-    display:none;
+    /* display:none; */
 }
 
 .nav-main-item>a:hover {
@@ -246,11 +246,17 @@ li.transparentLi,li.only-iconLi {
     bottom:2px;
 }
 
-.page-buttons li{
+.page-buttons>li{
     margin-left:10px;
     position:relative;
     display:inline-block;
     text-align:left;
+}
+
+.page-buttons .submenu {
+    right:0;
+    left:auto;
+    border-top:5px solid #9b9b9b;
 }
 
 button,.button {

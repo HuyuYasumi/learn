@@ -28,6 +28,21 @@
         document.getElementById("nav-contack-submenu").setAttribute("style","display:none;z-index:99998;");
     }
 
+    function languagesSubmenuover() {
+        var a=document.getElementById("languages-menu-submenu");
+    a.setAttribute("style","display:block;z-index:99999;");
+    }
+    function languagesSubmenuout() {
+        document.getElementById("languages-menu-submenu").setAttribute("style","display:none;z-index:99998;");
+    }
+    function advancedSubmenuover() {
+        var a=document.getElementById("advanced-menu-submenu");
+    a.setAttribute("style","display:block;z-index:99999;");
+    }
+    function advancedSubmenuout() {
+        document.getElementById("advanced-menu-submenu").setAttribute("style","display:none;z-index:99998;");
+    }
+
     /*var span1=document.getElementsByClassName("search-wrap");
     function mainq() {
         var mainq=document.getElementById("searchcao");
@@ -150,13 +165,13 @@
             </nav>
             <div id="document-actions">
                 <ul class="page-buttons">
-                    <li class="transparentLi">
+                    <li class="transparentLi" onmouseover="languagesSubmenuover()" onmouseout="languagesSubmenuout()">
                         <button class="transparent">
                             <span>语言</span>
                             <i></i>
                         </button>
-                        <div style="display:none">
-                            <div>
+                        <div style="z-index:99998;display:none;" id="languages-menu-submenu" class="submenu js-submenu">
+                            <div class="submenu-column">
                                 <ul>
                                     <li>
                                         <bdi><a href="">English (US) (en-US)</a></bdi>
@@ -181,13 +196,13 @@
                             <i></i>
                         </a>
                     </li>
-                    <li class="only-iconLi">
+                    <li class="only-iconLi" onmouseover="advancedSubmenuover()" onmouseout="advancedSubmenuout()">
                         <button class="only-icon">
                             <span>高级</span>
                             <i>更多</i>
                         </button>
-                        <div style="display:none">
-                            <div>
+                        <div style="z-index:99998;display:none;" id="advanced-menu-submenu" class="submenu js-submenu">
+                            <div class="submenu-column">
                                 <div>高级</div>
                                 <ul>
                                     <li>
