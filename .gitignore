@@ -1,10 +1,13 @@
 *.un~
 *.swp
 
+<<<<<<< HEAD
 MDN_web/Web技术文档MDN_files
 MDN_web/Web技术文档MDN.html
 新建文件夹
 
+=======
+>>>>>>> 31bf13c7f979385706e69d5a283c0c25fe756fdc
 # wenjanjia :
 documents
 Git
@@ -20,6 +23,10 @@ JavaScript/new1.js~
 #Html
 Html/.new2.html.un~
 Html/new2.html~
+<<<<<<< HEAD
+=======
+
+>>>>>>> 31bf13c7f979385706e69d5a283c0c25fe756fdc
 *.html~
 *.html~~
 
