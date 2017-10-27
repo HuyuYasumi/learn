@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <title>天猫tamll.com_clone</title>
-<script src="file:///F:/learn/Tmall/tmall.com_clone.js"></script>
 <link rel="stylesheet" href="file:///F:/learn/Tmall/tmall.com_clone.css">
 </head>
 
@@ -18,9 +17,12 @@
                 </p>
                 <nav id="login-menu">
                     <ul>
-                        <li class="hover-underline">
-                            <a href="">我的淘宝</a>
-                            <div style="display:none;z-index:999998" class="hover-block">
+                        <li class="hover-underline" onmouseover="treasuieSubmenuover()" onmouseout="treasuieSubmenuout()">
+                            <a href="">
+                                我的淘宝
+                                <i class="ico-submenu"></i>
+                            </a>
+                            <div style="display:none;z-index:999998" id="nav-treasuie-submenu">
                                 <div><a href="">已买到的宝贝</a></div>
                                 <div><a href="">已卖出的宝贝</a></div>
                             </div>
@@ -31,9 +33,12 @@
                         <li>
                                 <a href="">购物车</a>
                         </li>
-                        <li class="hover-underline">
-                            <a href="">收藏夹</a>
-                            <div style="display:none;z-index:999998" class="hover-block">
+                        <li class="hover-underline" onmouseover="bookSubmenuover()" onmouseout="bookSubmenuout()">
+                            <a href="">
+                                收藏夹
+                                <i class="ico-submenu"></i>
+                            </a>
+                            <div style="display:none;z-index:999998" id="nav-book-submenu">
                                 <div><a href="">收藏的宝贝</a></div>
                                 <div><a href="">收藏的店铺</a></div>
                             </div>
@@ -45,9 +50,12 @@
                         <li>
                             <a href="">淘宝网</a>
                         </li>
-                        <li class="hover-underline">
-                            <a href="">商家支持</a>
-                            <div style="display:none;z-index:999998" class="hover-block">
+                        <li class="hover-underline" onmouseover="businessSubmenuover()" onmouseout="businessSubmenuout()">
+                            <a href="">
+                                商家支持
+                                <i class="ico-submenu"></i>
+                            </a>
+                            <div style="display:none;z-index:999998" id="nav-business-submenu">
                                 <table>
                                     <th>商家</th>
                                     <tr>
@@ -93,5 +101,6 @@
     </div>
     <div></div>
     <div></div>
+<script src="file:///F:/learn/Tmall/tmall.com_clone.js"></script>
 </body>
 </html>
