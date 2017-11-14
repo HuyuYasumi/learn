@@ -25,7 +25,7 @@ int main()
     min=rmax(arr[0], ROWS*COLS);
     pf_two(ROWS, COLS, arr);
     pf_one(sa, ROWS);
-    printf("%.3f %.3f\n", allA, min);
+    printf("%.3f\n%.3f\n", allA, min);
     return 0;
 }
 
