@@ -18,7 +18,7 @@ int main(int argc, char * argv[])
     while(s_gets(numbers, TEN) && numbers[0] != '\0') {
         char str[TEN]="copy_";
         char temp[BUFSIZE];
-        if((iofsrc=fopen(numbers, "r")) == NULL) {
+        if((iofsrc=fopen(numbers, "r+")) == NULL) {
             fprintf(stderr, "Could not open %s for output.\n", numbers);
             exit(EXIT_FAILURE);
         }
@@ -27,7 +27,7 @@ int main(int argc, char * argv[])
             exit(EXIT_FAILURE);
         }
         strcat(str, numbers);
-        if((iofile=fopen(str, "w")) == NULL) {
+        if((iofile=fopen(str, "w+")) == NULL) {
             fprintf(stderr, "Could not open %s for output.\n", str);
             exit(EXIT_FAILURE);
         }
@@ -41,22 +41,31 @@ int main(int argc, char * argv[])
             int n=0;
             for(int i=0+n*BUFSIZE; i<times; i++) {
                 temp[i]=toupper(temp[i]);
-                putchar(temp[i]);
+                //putchar(temp[i]);
             }
-            putchar('\n');
+            //putchar('\n');
             fwrite(temp, sizeof(char), times, iofile);
             n++;
             //puts("O");
         }
         //append(iofsrc, iofile);
-        fseek(iofile, 0, SEEK_SET);
-        //rewind(iofile);
+        //fseek(iofile, 0, SEEK_SET);
+        rewind(iofile);
         /*char ch;
         while((ch=getc(iofile)) != EOF) {
             putchar(ch);
         }*/
-        fclose(iofsrc);
-        fclose(iofile);
+        char ch[SLEN];
+        while(fscanf(iofile, "%s", ch) == 1) {
+            puts(ch);
+        }
+        //puts(ch);
+        if (fclose(iofsrc) != 0) {
+            fprintf(stderr, "Error closing src file\n");
+        }
+        if (fclose(iofile) != 0) {
+            fprintf(stderr, "Error closing file\n");
+        }
     }
     puts("Bye!");
     return 0;
