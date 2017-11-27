@@ -16,7 +16,7 @@ int main(int argc, char * argv[])
 
     printf("Please enter filename:\n");
     while(s_gets(numbers, TEN) && numbers[0] != '\0') {
-        char str[TEN]="cpry_";
+        char str[TEN]="copy_";
         char temp[BUFSIZE];
         if((iofsrc=fopen(numbers, "r")) == NULL) {
             fprintf(stderr, "Could not open %s for output.\n", numbers);
