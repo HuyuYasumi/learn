@@ -57,6 +57,7 @@ int main(int argc, char * argv[])
         }*/
         char ch[SLEN];
         while(fscanf(iofile, "%s", ch) == 1) {
+            //printf("%s",ch);
             puts(ch);
         }
         //puts(ch);
