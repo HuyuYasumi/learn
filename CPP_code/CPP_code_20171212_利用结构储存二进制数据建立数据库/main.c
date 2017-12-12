@@ -13,9 +13,6 @@ struct book {
     float value;
 };
 
-void append(FILE * source, FILE * dest);
-char * s_gets(char * st, int n);
-
 int main(int argc, char * argv[])
 {
     struct book library[MAXBKS];
@@ -35,6 +32,33 @@ int main(int argc, char * argv[])
         count++;
     }
     filecount=count;
+    puts("");
+    for(int n=0; n<count-1; n++) {
+        for(int m=1; m<count-n; m++) {
+            struct book temp;
+            if(strcmp(library[n].title, library[m+n].title)>0) {
+                temp=library[n];
+                library[n]=library[m+n];
+                library[m+n]=temp;
+            }
+        }
+        printf("%s by %s:$%.2f\n", library[n].title, library[n].author, library[n].value);
+    }
+    printf("%s by %s:$%.2f\n", library[count-1].title, library[count-1].author, library[count-1].value);
+    puts("");
+    for(int n=0; n<count-1; n++) {
+        for(int m=1; m<count-n; m++) {
+            struct book temp;
+            if(library[n].value>library[n+m].value) {
+                temp=library[n];
+                library[n]=library[m+n];
+                library[m+n]=temp;
+            }
+        }
+        printf("%s by %s:$%.2f\n", library[n].title, library[n].author, library[n].value);
+    }
+    printf("%s by %s:$%.2f\n", library[count-1].title, library[count-1].author, library[count-1].value);
+    puts("");
 
     if(count == MAXBKS) {
         fputs("The book.dat file is full.", stderr);
