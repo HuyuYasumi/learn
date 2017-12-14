@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define MAXBALL 10
 
 struct man {
     int a;
@@ -13,16 +14,41 @@ struct man {
 
 int main()
 {
+    struct man ball[MAXBALL];
     struct man temp1, temp2;
     long pos=0;
-    int count=1, count2=0;
+    int count=1, count2=0, bcount=0;
     FILE * pbook;
 
     if((pbook=fopen("ball.txt", "r+")) == NULL) {
         fputs("Can't open ball.txt file\n", stderr);
         exit(1);
     }
-    for(int i=0; i<10; i++) {
+    rewind(pbook);
+    while(bcount<10 && fscanf(pbook, "%d %s %s %d %f %f %f", &ball[bcount].a, &ball[bcount].fname, &ball[bcount].lname, &ball[bcount].b, &ball[bcount].c, &ball[bcount].d, &ball[bcount].e) == 7) {
+        printf("%s %d %.2f %.2f %.2f\n", ball[bcount].fname, ball[bcount].b, ball[bcount].c, ball[bcount].d, ball[bcount].e);
+        bcount++;
+    }
+    count=bcount;
+    //printf("%d", bcount);
+    for(int i=0; i<--bcount; i++) {
+        for(int i=0, n=1; i<bcount; i++) {
+            if(ball[bcount].a == ball[i].a) {
+                if(i == n) {
+                 break;
+                }
+                struct man temp;
+                temp=ball[i];
+                ball[i]=ball[bcount-n];
+                ball[bcount-n]=temp;
+                n++;
+            }
+        }
+    }
+    for(int i=0; i<count; i++) {
+        printf("%s %d %.2f %.2f %.2f\n", ball[i].fname, ball[i].b, ball[i].c, ball[i].d, ball[i].e);
+    }
+    /*for(int i=0; i<10; i++) {
         float  ca=0, da=0, ea=0;
         int ba=0, count3=0;
         count=count2+1;
@@ -55,7 +81,7 @@ int main()
         printf("%d\n", pos=(long)count2*(sizeof(struct man)/2-1));
         printf("The %s is %.2f\n", temp1.fname, ca/ba);
         //break;
-    }
+    }*/
     fclose(pbook);
     return 0;
 }
