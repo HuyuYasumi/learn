@@ -3,7 +3,10 @@
 #include <stdbool.h>
 
 //这里插入Item的定义，例如
-typedef int Item;    //用于main.c
+typedef struct item {
+    long arrive;
+    int processtime;
+} Item;    //用于main.c
 //或者typedef struct item {int gumption; int charisma;} Item;
 
 #define MAXQUEUE 10
