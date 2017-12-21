@@ -13,8 +13,15 @@ if not os.path.exists(target_dir):
 today = target_dir + os.sep + time.strftime('%Y%m%d')
 #将当前时间作为zip文件的文件名
 now = time.strftime('%H%M%S')
-#zip文件名的格式
-target = today + os.sep + now + '.zip'
+
+#用户输入评论
+comment=input('Enter a comment -->')
+#用户是否输入
+if len(comment) == 0:
+    target = today + os.sep + now + '.zip'
+else:
+    target = today + os.sep + now + '_' + comment.replace(' ', '_') + '.zip'
+
 #如子目录不存在，则创建它
 if not os.path.exists(today):
     os.mkdir(today)
