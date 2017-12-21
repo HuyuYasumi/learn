@@ -2,9 +2,18 @@ import os
 import time
 
 #需要备份的文件或文件夹
-source = ["F:\learn\简明Python教程\Python_temp\新建文件夹", "F:\learn\简明Python教程\Python_temp\新建文件夹2"]
+source = ['F:/learn/简明Python教程/Python_temp/新建文件夹']
 #主备份文件夹
-target_dir = 'F:\learn\简明Python教程\Python_temp'
+target_dir = 'F:/learn/简明Python教程/Python_temp'
+
+#用户输入被备份文件路径
+source2 = input('Enter a file path <X:/XXX/XXX> or <X:\\\\XXX\\\\XXX> that your want to backup -->')
+if len(source2) != 0:
+    source[0] = source2
+#用户输入主备份文件夹路径
+target_dir2 = input('Enter a file path <X:/XXX/XXX> <X:\\\\XXX\\\\XXX> that to store your backup files -->')
+if len(target_dir2) != 0:
+    target_dir = target_dir2
 #如不存在目标目录，则创建
 if not os.path.exists(target_dir):
     os.mkdir(target_dir)
