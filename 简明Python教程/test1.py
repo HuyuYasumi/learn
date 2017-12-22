@@ -37,3 +37,20 @@ if sys.__name__ == '__main__':
     print('sys')
 if __name__ == '__main__':
     print('this')
+
+class Person:
+    def __init__(self, name='Hello'):
+        self.name=name
+    def say_hi(self):
+        print('Hellw, how are you?', self.name)
+    def say_hello(self):
+        print('Hi, how are you?', self.name)
+    name='Hi'
+    def say_mother(self):
+        print(self.name, 'How are you')
+
+p = Person()
+p.say_hi()
+p.say_hello()
+print(p.name)
+p.say_mother()
