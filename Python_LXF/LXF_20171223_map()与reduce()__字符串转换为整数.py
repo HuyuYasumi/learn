@@ -45,19 +45,11 @@ def str2float(s):
         return digits[s]
 
     i = 0
-    j = -1
-    intp = []
-    flop = []
 
     for i in range(0 , len(s)):
         if s[i] == '.':
             break
-        intp.append(s[i])
 
-    while j > -(len(s) - i):
-        flop.append(s[j])
-        j = j - 1
-
-    return reduce(fn, map(switch, intp)) + (reduce(ff, map(switch, flop))) / 10
+    return reduce(fn, map(switch, s[0:i])) + (reduce(ff, map(switch, s[-1:-(len(s)-i):-1]))) / 10
 
 print(str2float('234.567555'))
