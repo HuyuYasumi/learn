@@ -17,5 +17,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 data = b''.join(buffer)
 header, html = data.split(b'\r\n\r\n', 1)
 print(header.decode('utf-8'))
-with open(r'F:\learn\Python_LXF\Python_temp\sian.html', 'wb') as f:
+with open(r'.\Python_temp\sian.html', 'wb') as f:
     f.write(html)
