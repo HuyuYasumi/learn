@@ -1,0 +1,8 @@
+*.cbp
+*.depend
+*.layout
+*.vim
+*.viminfo
+bin
+obj
+CPP_code/Test1/
