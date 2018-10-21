@@ -1,94 +1,31 @@
-public class test
-{
-    public static void main(String[] args)
-    {
-        Employee[] staff = new Employee[3];
-        staff[0] = new Employee("Tom", 40000);
-        staff[1] = new Employee("Dick", 60000);
-        staff[2] = new Employee("Harry", 65000);
+import java.util.*;
 
-        for(Employee e : staff) {
-            System.out.println("name = " + e.getName() + ", id = " + e.getId() + ", salary = " + e.getSalary());
+public class test {
+    public static void main(String[] args) {
+        HashMap<String, Integer> staff = new HashMap<>();
+        staff.put("144", 144);
+        staff.put("567", 567);
+        staff.put("157", 157);
+        staff.put("456", 456);
+
+        System.out.println(staff);
+
+        staff.remove("567");
+
+        staff.put("456", 456-2);
+
+        System.out.println(staff.get("157"));
+
+        staff.forEach((k, v) ->
+            System.out.println("key = " + k + ", value = " + v));
+
+        ArrayList<Integer> list = new ArrayList<>();
+        list.add(0);
+        list.add(0);
+        list.add(0);
+        list.get(2);
+        for (int i : list) {
+            System.out.print(i + " ");
         }
-
-        int n = Employee.getNextId();
-        System.out.println("Next avaliable id = " + n);
-    }
-}
-
-class Employee
-{
-    private static int nextId = 1;
-
-    private String name;
-    private double salary;
-    private int id;
-
-    public Employee(String name, double salary)
-    {
-        this.name = name;
-        this.salary = salary;
-        this.id = this.setId();
-    }
-
-    public String getName()
-    {
-        return this.name;
-    }
-    public double getSalary()
-    {
-        return this.salary;
-    }
-    public int getId()
-    {
-        return this.id;
-    }
-
-    public int setId()
-    {
-        int tmp = nextId;
-        nextId ++;
-        return tmp;
-    }
-
-    public static int getNextId()
-    {
-        return nextId;
-    }
-
-    public static void main(String[] args)
-    {
-        Employee e = new Employee("Harry", 50000);
-        System.out.println(e.getName() + " " + e.getSalary());
-    }
-}
-
-abstract class Person
-{
-    private String name;
-    public Person(String name)
-    {
-        this.name = name;
-    }
-    public abstract String getDescription();
-    public String getName()
-    {
-        return name;
-    }
-}
-
-class Student extends Person
-{
-    private String major;
-
-    public Student(String name, String major)
-    {
-        super(name);
-        this.major = major;
-    }
-
-    public String getDescription()
-    {
-        return "a Student majoring in " + major;
     }
 }
