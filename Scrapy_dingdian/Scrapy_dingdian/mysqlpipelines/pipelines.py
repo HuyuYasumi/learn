@@ -26,4 +26,4 @@ class DingdianPipeline():
                                     serialstatus,
                                     novelurl
                                    )
-                print('开始存储小说标题')
+                print('开始存储小说数据')
